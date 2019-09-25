@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: f0aa61854369ed642b323bec96c32b2c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: EpoXY histoRy
+  fontNames:
+  - EpoXY histoRy
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 67823ea563bb7264d9b99f5a1fe68a23, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
