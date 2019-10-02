@@ -32,5 +32,9 @@ public class CollectibleManager : MonoBehaviour
     {
         _collectedBurgs++;
         DisplayBurgCount();
+        if(_collectedBurgs == _totalBurgs)
+        {
+            WinMenu.Instance.Show();
+        }
     }
 }
