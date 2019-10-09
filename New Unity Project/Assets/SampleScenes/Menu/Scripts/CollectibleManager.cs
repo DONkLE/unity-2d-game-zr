@@ -36,5 +36,7 @@ public class CollectibleManager : MonoBehaviour
         {
             WinMenu.Instance.Show();
         }
+
+        SoundManager.Instance.PlayCoinCollectSound();
     }
 }
