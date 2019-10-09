@@ -9,15 +9,18 @@ public class WinMenu : MonoBehaviour
     public static WinMenu Instance;
     public GameObject container;
     public Button nextLevelButton;
+    public Button dismissButton;
 
     private void OnEnable()
     {
         nextLevelButton.onClick.AddListener(HandleNextLevelPressed);
+        dismissButton.onClick.AddListener(Hide);
     }
 
     private void OnDisable()
     {
         nextLevelButton.onClick.RemoveListener(HandleNextLevelPressed);
+        dismissButton.onClick.RemoveListener(Hide);
     }
 
     private void HandleNextLevelPressed()
@@ -36,4 +39,8 @@ public class WinMenu : MonoBehaviour
         container.SetActive(true);
     }
 
+    public void Hide()
+    {
+        container.SetActive(false);
+    }
 }
