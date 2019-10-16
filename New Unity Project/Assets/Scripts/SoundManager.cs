@@ -12,6 +12,8 @@ public class SoundManager : MonoBehaviour
 
     public AudioClip hitSound;
 
+    public AudioClip winSound;
+
     private void Awake()
     {
         if (Instance == null)
@@ -19,7 +21,7 @@ public class SoundManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
-       else
+        else
         {
             Destroy(this.gameObject);
         }
@@ -33,6 +35,11 @@ public class SoundManager : MonoBehaviour
     public void PlayHitSound()
     {
         audioSource.clip = hitSound;
+        audioSource.Play();
+    }
+    public void PlayWinSound()
+    {
+        audioSource.clip = winSound;
         audioSource.Play();
     }
 }

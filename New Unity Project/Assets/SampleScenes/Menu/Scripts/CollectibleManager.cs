@@ -35,8 +35,9 @@ public class CollectibleManager : MonoBehaviour
         if(_collectedBurgs == _totalBurgs)
         {
             WinMenu.Instance.Show();
+            SoundManager.Instance.PlayWinSound();
         }
 
-        SoundManager.Instance.PlayCoinCollectSound();
+        else SoundManager.Instance.PlayCoinCollectSound();
     }
 }
